@@ -3,13 +3,12 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --port 3001",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint . --max-warnings 0"
+    "dev": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "@repo/ui": "workspace:*",
+    "i18next": "^23.8.2",
     "next": "^14.0.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
@@ -18,11 +17,21 @@
     "@next/eslint-plugin-next": "^14.0.4",
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
+    "@storybook/addon-essentials": "^7.6.13",
+    "@storybook/addon-interactions": "^7.6.13",
+    "@storybook/addon-links": "^7.6.13",
+    "@storybook/addon-onboarding": "^1.0.11",
+    "@storybook/blocks": "^7.6.13",
+    "@storybook/nextjs": "^7.6.13",
+    "@storybook/react": "^7.6.13",
+    "@storybook/test": "^7.6.13",
     "@types/eslint": "^8.56.1",
     "@types/node": "^20.10.6",
     "@types/react": "^18.2.46",
     "@types/react-dom": "^18.2.18",
     "eslint": "^8.56.0",
+    "eslint-plugin-storybook": "^0.6.15",
+    "storybook": "^7.6.13",
     "typescript": "^5.3.3"
   }
 }
