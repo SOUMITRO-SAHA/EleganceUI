@@ -1,5 +1,5 @@
 {
-  "name": "docs",
+  "name": "@eui/docs",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -7,13 +7,23 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
-    "@repo/ui": "workspace:*",
+    "@eui/lib": "workspace:*",
+    "@eui/common": "workspace:*",
+    "@radix-ui/react-tooltip": "^1.0.7",
+    "@eui/ui": "workspace:*",
+    "@storybook/addon-docs": "^7.6.13",
+    "@storybook/blocks": "^7.6.13",
+    "@storybook/nextjs": "^7.6.13",
+    "@storybook/preview-api": "^7.6.13",
     "i18next": "^23.8.2",
     "next": "^14.0.4",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-docgen": "^7.0.3",
+    "react-dom": "^18.2.0",
+    "react-i18next": "^14.0.5"
   },
   "devDependencies": {
+    "@babel/core": "^7.23.9",
     "@next/eslint-plugin-next": "^14.0.4",
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
@@ -21,14 +31,13 @@
     "@storybook/addon-interactions": "^7.6.13",
     "@storybook/addon-links": "^7.6.13",
     "@storybook/addon-onboarding": "^1.0.11",
-    "@storybook/blocks": "^7.6.13",
-    "@storybook/nextjs": "^7.6.13",
     "@storybook/react": "^7.6.13",
     "@storybook/test": "^7.6.13",
     "@types/eslint": "^8.56.1",
     "@types/node": "^20.10.6",
     "@types/react": "^18.2.46",
     "@types/react-dom": "^18.2.18",
+    "babel-loader": "^9.1.3",
     "eslint": "^8.56.0",
     "eslint-plugin-storybook": "^0.6.15",
     "storybook": "^7.6.13",
