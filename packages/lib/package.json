@@ -1,0 +1,22 @@
+{
+  "name": "@eui/lib",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "exports": {
+    ".": "./core/index.ts"
+  },
+  "files": [
+    "./core/index.ts"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "clsx": "^2.1.0",
+    "tailwind-merge": "^2.2.1"
+  }
+}
