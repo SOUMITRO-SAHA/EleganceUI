@@ -9,8 +9,7 @@
     "test": "vitest"
   },
   "devDependencies": {
-    "@repo/eslint-config": "workspace:*",
-    "@repo/typescript-config": "workspace:*",
+    "@eui/config": "workspace:*",
     "dotenv-checker": "^1.1.5",
     "jest-diff": "^29.7.0",
     "jsdom": "^24.0.0",
