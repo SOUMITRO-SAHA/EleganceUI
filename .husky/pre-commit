@@ -1,0 +1,27 @@
+#!/bin/bash
+# Pre-commit hook: Run lint-staged with progress reporting.
+# This hook will abort the commit if lint-staged fails.
+
+# Exit immediately if a command exits with a non-zero status.
+set -e
+
+echo "========================================"
+echo "Pre-commit hook: Starting lint checks..."
+echo "========================================"
+
+# Load Husky's helper script.
+. "$(dirname "$0")/_/husky.sh"
+
+# pnpm test
+
+echo "Running lint-staged..."
+if pnpm exec lint-staged; then
+  echo "Lint-staged completed successfully."
+else
+  echo "Lint-staged failed. Aborting commit." >&2
+  exit 1
+fi
+
+echo "========================================"
+echo "Pre-commit hook: All checks passed. Proceeding with commit."
+echo "========================================"
