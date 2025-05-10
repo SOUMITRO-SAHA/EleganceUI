@@ -1,0 +1,22 @@
+{
+  "name": "@eui/react",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "react": "catalog:",
+    "react-dom": "catalog:",
+    "next": "catalog:"
+  },
+  "devDependencies": {
+    "typescript": "catalog:",
+    "@types/node": "catalog:",
+    "@types/react": "catalog:",
+    "@types/react-dom": "catalog:"
+  }
+}

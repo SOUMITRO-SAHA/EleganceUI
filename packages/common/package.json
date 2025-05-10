@@ -1,0 +1,31 @@
+{
+  "name": "@eui/common",
+  "version": "0.0.1",
+  "description": "Common utilities for Elegance UI",
+  "main": "index.ts",
+  "exports": {
+    ".": "./index.ts",
+    "./config/*": "./config/*.ts",
+    "./constants/*": "./constants/*.ts",
+    "./types/*": "./types/*.ts",
+    "./utils/*": "./utils/*.ts"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest",
+    "lint": "eslint . --ext .ts,.js,.tsx,.jsx",
+    "lint:fix": "eslint . --ext .ts,.js,.tsx,.jsx --fix",
+    "lint:report": "eslint . --format json --output-file ../../lint-results/shared.json"
+  },
+  "keywords": [],
+  "author": "Soumitra Saha",
+  "license": "GPL-3.0-only",
+  "dependencies": {},
+  "devDependencies": {
+    "@eui/typescript-config": "workspace:*",
+    "typescript": "catalog:"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
