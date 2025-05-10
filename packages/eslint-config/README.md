@@ -1,3 +1,3 @@
-# `@turbo/eslint-config`
+# @elegance-ui/eslint-config
 
-Collection of internal eslint configurations.
+Shared ESLint configuration for Elegance UI packages.
