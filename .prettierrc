@@ -1,0 +1,38 @@
+{
+  "semi": true,
+  "singleQuote": true,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "printWidth": 100,
+  "bracketSpacing": true,
+  "arrowParens": "always",
+  "endOfLine": "lf",
+  "plugins": [
+    "prettier-plugin-organize-imports", 
+    "prettier-plugin-tailwindcss"
+  ],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true,
+  "organizeImports": {
+    "groupBy": ["type", "module", "style"],
+    "order": [
+      "^react",
+      "^solid-js",
+      "^next.*",
+      "^vite.*",
+      "<THIRD_PARTY_MODULES>",
+      "^[.~/]",
+      "^[.@/]",
+      "^[./]",
+      "^~/(.*)$",
+      "^@/(.*)$",
+      "^[./]"
+    ]
+  },
+  "overrides": [{
+    "files": ["*.md", "*.mdx", "*.txt"],
+    "options": {
+      "parser": "markdown"
+    }
+  }]
+} 

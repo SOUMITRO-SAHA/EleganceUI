@@ -48,5 +48,9 @@
   "packageManager": "pnpm@9.5.0",
   "engines": {
     "node": ">=20"
+  },
+  "dependencies": {
+    "prettier-plugin-organize-imports": "^4.1.0",
+    "prettier-plugin-tailwindcss": "^0.6.11"
   }
 }
